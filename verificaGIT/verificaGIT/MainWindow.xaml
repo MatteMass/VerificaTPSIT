@@ -7,6 +7,44 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Height="20" Margin="229,27,0,0" VerticalAlignment="Top" Width="68" Click="btnAdd_Click"/>
+        <Button x:Name="btnBiblioteca" Content="Add" HorizontalAlignment="Left" Height="20" Margin="685,27,0,0" VerticalAlignment="Top" Width="68" Click="btnBiblioteca_Click"/>
+        <Button x:Name="btnReTi" Content="readingTime" HorizontalAlignment="Left" Height="20" Margin="229,264,0,0" VerticalAlignment="Top" Width="79" Click="btnReTi_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="38,10,0,0" TextWrapping="Wrap" Text="AUTORE:" VerticalAlignment="Top" Width="178"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="38,52,0,0" TextWrapping="Wrap" Text="NOME DEL LIBRO:" VerticalAlignment="Top" Width="178"/>
+        <TextBlock x:Name="txtAnno" HorizontalAlignment="Left" Height="17" Margin="38,98,0,0" TextWrapping="Wrap" Text="ANNO DI PUBBLICAZIONE:" VerticalAlignment="Top" Width="178"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="38,194,0,0" TextWrapping="Wrap" Text="NUMERO DI PAGINE" VerticalAlignment="Top" Width="178"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="-34,110,0,0" TextWrapping="Wrap" Text="AGGIUNGERE LIBRO" VerticalAlignment="Top" Width="111" RenderTransformOrigin="0.499,0.643">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-89.719"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="38,145,0,0" TextWrapping="Wrap" Text="EDITORE:" VerticalAlignment="Top" Width="178"/>
+        <TextBox x:Name="txtAut" HorizontalAlignment="Left" Height="20" Margin="38,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <TextBox x:Name="txtNomeLibro" HorizontalAlignment="Left" Height="20" Margin="38,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <TextBox x:Name="txtAnnoPub" HorizontalAlignment="Left" Height="20" Margin="38,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <TextBox x:Name="txtEd" HorizontalAlignment="Left" Height="20" Margin="38,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <TextBox x:Name="txtPagine" HorizontalAlignment="Left" Height="20" Margin="38,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <TextBox x:Name="txtNomeBib" HorizontalAlignment="Left" Height="20" Margin="486,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <TextBox x:Name="txtIndi" HorizontalAlignment="Left" Height="20" Margin="486,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <TextBox x:Name="txtAp" HorizontalAlignment="Left" Height="20" Margin="486,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <TextBox x:Name="txtChius" HorizontalAlignment="Left" Height="20" Margin="486,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <TextBlock HorizontalAlignment="Left" Margin="486,10,0,0" TextWrapping="Wrap" Text="NOME BIBLIOTECA:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="486,56,0,0" TextWrapping="Wrap" Text="INDIRIZZO BIBLIOTECA:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="486,99,0,0" TextWrapping="Wrap" Text="ORARIO APERTURA:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="486,146,0,0" TextWrapping="Wrap" Text="ORARIO CHIUSURA:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="486,192,0,0" TextWrapping="Wrap" Text="ELENCO LIBRI:" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstElenco" HorizontalAlignment="Left" Height="208" Margin="486,216,0,0" VerticalAlignment="Top" Width="188" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="38,264,0,0" TextWrapping="Wrap" Text="MOSTRA TEMPO DI LETTURA --&gt;" VerticalAlignment="Top" Width="178"/>
+        <Label x:Name="lblTempo" Content="" HorizontalAlignment="Left" Margin="38,281,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="38,320,0,0" TextWrapping="Wrap" Text="MOSTRA INFORMAZIONI--&gt;" VerticalAlignment="Top" Width="178"/>
+        <Button x:Name="btnToString" Content="infos" HorizontalAlignment="Left" Margin="204,322,0,0" VerticalAlignment="Top" Width="79" Click="btnToString_Click"/>
+        <Label x:Name="lblInfo" Content="" HorizontalAlignment="Left" Height="82" Margin="38,342,0,0" VerticalAlignment="Top" Width="151"/>
 
     </Grid>
 </Window>
