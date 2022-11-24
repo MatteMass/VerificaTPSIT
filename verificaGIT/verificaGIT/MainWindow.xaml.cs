@@ -31,7 +31,7 @@ namespace verificaGIT
         {
             Libro libro = new Libro(txtAut.Text.ToString(), txtNomeLibro.Text.ToString(), int.Parse(txtAnnoPub.Text), txtEd.Text.ToString(), int.Parse(txtPagine.Text));
             lstElenco.Items.Add(libro);
-            
+            //commento aggiunto alla fine
         }
 
         private void btnBiblioteca_Click(object sender, RoutedEventArgs e)
